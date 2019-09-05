@@ -8,7 +8,7 @@ import { getMonitors, getMonitorsLoading } from '../selectors/monitorSelectors';
 class HomeView extends Component {
   static propTypes = {
     fetch: PropTypes.func.isRequired,
-    characters: PropTypes.array.isRequired,
+    monitors: PropTypes.array.isRequired,
     loading: PropTypes.bool.isRequired
   }
 
