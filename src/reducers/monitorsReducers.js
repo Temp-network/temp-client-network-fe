@@ -11,7 +11,8 @@ export default function reducer(state = initialState, action) {
     case FETCH_MONITOR_LOADING:
       return { ...state, loading: true };
     case FETCH_MONITOR:
-      return { ...state, images: action.payload, loading: false };    default: 
+      return { ...state, monitors: action.payload, loading: false };    
+    default: 
       return state;
   }
 }

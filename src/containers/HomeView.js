@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Monitors from '../components/monitor/Monitors';
-import { fetchMonitors } from '../actions/monitorActions';
+import { fetchMonitor } from '../actions/monitorActions';
 import { getMonitors, getMonitorsLoading } from '../selectors/monitorSelectors';
 
 class HomeView extends Component {
@@ -31,7 +31,7 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
   fetch() {
-    dispatch(fetchMonitors());
+    dispatch(fetchMonitor());
   }
 });
 
